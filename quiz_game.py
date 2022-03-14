@@ -1,30 +1,31 @@
 # Computer Quiz Game
 print("******** Welcome to the Computer Quiz ********")
 
-playing = input("Would you like to play? ").title()
+playing = input("Would you like to play? ").lower()
 
-if playing != "Yes" and playing != "YES": # if true (anything but yes, will quit game
+if playing != "yes": # if true (anything but yes, will quit game
+    print("Maybe Next Time!")
     quit() 
 
-print("Let's Play!")
+print("Then Let's Play!")
 
-answer = input("What does CPU stand for? ").title()
-if answer == "Central Processing Unit" and answer != "CENTRAL PROCESSING UNIT":
+answer = input("What does CPU stand for? ").lower()
+if answer == "central processing unit":
     print("Correct!")
 else:
     print("Wrong :(")
-answer = input("What does GPU stand for? ").title()
-if answer == "Graphics Processing Unit" and answer != "GRAPHICS PROCESSING UNIT":
+answer = input("What does GPU stand for? ").lower()
+if answer == "graphics processing unit" or answer == "graphic processing unit":
     print("Correct!")
 else:
     print("Wrong :(")
-answer = input("What does RAM stand for? ").title()
-if answer == "Random Access Memory" and answer != "RANDOM ACCESS MEMORY":
+answer = input("What does RAM stand for? ").lower()
+if answer == "random access memory":
     print("Correct!")
 else:
     print("Wrong :(")
-answer = input("What does PSU? ").title()
-if answer == "Power Supply Unit" and answer != "POWER SUPPLY UNIT":
+answer = input("What does PSU? ").lower()
+if answer == "power supply unit":
     print("Correct!")
 else:
     print("Wrong :(")
